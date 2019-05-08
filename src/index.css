@@ -21,3 +21,52 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+body {
+  font-family: 'Muli', sans-serif;
+}
+input[type="text"]:disabled{background-color:#f0f2f7;}
+.animateChat {
+  height: 400px;
+  animation: changeheight 0.7s 0.1s ease-out forwards;
+}
+@keyframes changeheight {
+  to {
+    height: 600px;
+  }
+}
+.box {
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+.box-show {
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 1;
+  visibility: visible;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #6CB2EB;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #3490DC;
+}

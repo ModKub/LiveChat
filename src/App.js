@@ -1,9 +1,10 @@
 import React from 'react'
+import Chat from './Chat'
 
 function App() {
   return (
-    <div>Test</div>
+    <Chat />
   );
 }
 
-export default App;
+export default App
