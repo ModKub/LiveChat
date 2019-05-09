@@ -35,7 +35,7 @@ input[type="text"]:disabled{background-color:#f0f2f7;}
     height: 600px;
   }
 }
-.box {
+.boxhidden {
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
   -o-transition: 0.5s;
@@ -43,7 +43,7 @@ input[type="text"]:disabled{background-color:#f0f2f7;}
   opacity: 0;
   visibility: hidden;
 }
-.box-show {
+.boxvisible {
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
   -o-transition: 0.5s;
