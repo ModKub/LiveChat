@@ -67,11 +67,16 @@ const MessageBox = ({message, messages, sendMessage, setMessage, openBox, closeM
 function Chat() {
   const [openBox, toggleBox] = useState(false)
   const [message, setMessage] = useState('')
+  const [helpMessage, setHelpMessage] = useState('')
   const [messages, pushMessage] = useState([])
+
   function sendMessage(type) {
-    if (message.length < 1) return
-    pushMessage([...messages, {type: type, message: message}])
-    setMessage('')
+    const newMessage = type === 'user' ? message : helpMessage
+    if (newMessage.length < 1) return
+    console.log(newMessage)
+    pushMessage([...messages, {type: type, message: newMessage}])
+    if (type === 'user') setMessage('')
+    else setHelpMessage('')
     setTimeout(() => {
       const element = document.getElementById('scroll')
       if (element) element.scrollTop = element.scrollHeight
@@ -81,7 +86,7 @@ function Chat() {
   return (
     <div>
       <form onSubmit={(e) => e.preventDefault()}>
-        <input type='text' value={message} onChange={e => setMessage(e.target.value)} placeholder='Wpisz treść wiadomości...' style={{ outline: 'none' }}/>
+        <input type='text' value={helpMessage} onChange={e => setHelpMessage(e.target.value)} placeholder='Wpisz treść wiadomości...' style={{ outline: 'none' }}/>
         <button className='bg-blue hover:bg-blue-dark text-white font-bold py-2 px-4 rounded' onClick={() => sendMessage('helper')}>dodaj wiadomosc od pomocy</button>
       </form>
       <StartChat sendMessage={sendMessage} openBox={openBox} openMessageBox={() => toggleBox(true)} />
