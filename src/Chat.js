@@ -73,7 +73,6 @@ function Chat() {
   function sendMessage(type) {
     const newMessage = type === 'user' ? message : helpMessage
     if (newMessage.length < 1) return
-    console.log(newMessage)
     pushMessage([...messages, {type: type, message: newMessage}])
     if (type === 'user') setMessage('')
     else setHelpMessage('')
