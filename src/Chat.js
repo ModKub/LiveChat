@@ -17,18 +17,18 @@ const MessageBox = ({message, messages, sendMessage, setMessage, openBox, closeM
   const animate = chatStarted ? 'animateChat' : ''
   return <div
     className={`shadow-lg rounded-lg flex flex-col justify-between bg-blue-600 text-white ${animate}`}
-    style={{position: 'fixed', bottom: 50, right: 50, width: '400px', height: '410px'}}>
-    <div className='flex justify-between' style={{ padding: chatStarted ? '15px' : '30px' }}>
+    style={{position: 'fixed', bottom: 40, right: 50, width: '400px', height: '400px'}}>
+    <div className='flex justify-between' style={{ padding: '20px' }}>
       <div className='flex' style={{ fontSize: chatStarted ? '30px' : '42px' }}>
-        {chatStarted && <img alt='avatar' style={{ width: '60px', height: '60px', marginRight: '20px' }} src={Couple} /> }
+        {chatStarted && <img alt='avatar' style={{  marginRight: '20px' }} src={Couple} /> }
         <div style={{ alignSelf: 'center' }}>Witaj!</div>
       </div>
-      <div onClick={closeMessageBox} className='rounded-full cursor-pointer self-start hover:bg-blue-500' style={{ padding: '5px' }}>
+      <div onClick={closeMessageBox} className='rounded-full cursor-pointer self-start hover:text-red-300' >
         <i className='fas fa-times' style={{ fontSize: '20px' }} />
       </div>
     </div>
     {chatStarted ?
-      <div className='bg-white text-black border-b border-blue-600' id='scroll' style={{ padding: '30px 30px 5px 30px', overflowY: 'auto', height: '410px' }}>
+      <div className='bg-white text-black border-b border-blue-600' id='scroll' style={{ padding: '30px 30px 5px 30px', overflowY: 'auto', height: '100%' }}>
         {messages.map((el, i) => {
           const messageClass = el.type === 'user' ? 'bg-blue-500 float-right' : 'bg-blue-600 float-left'
           return <div key={i}>
@@ -53,7 +53,7 @@ const MessageBox = ({message, messages, sendMessage, setMessage, openBox, closeM
       </React.Fragment>
     }
 
-    <div className='bg-white rounded-b-lg text-gray-900' style={{ width: '100%', height: '100px', padding: '30px' }}>
+    <div className='bg-white rounded-b-lg text-gray-900' style={{ width: '100%', height: '90px', padding: '30px' }}>
       <form onSubmit={(e) => {
           e.preventDefault()
           sendMessage('user')
