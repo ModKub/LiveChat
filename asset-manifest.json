@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/LiveChat/static/css/main.a86cfec6.chunk.css",
-    "main.js": "/LiveChat/static/js/main.49b06954.chunk.js",
-    "main.js.map": "/LiveChat/static/js/main.49b06954.chunk.js.map",
+    "main.css": "/LiveChat/static/css/main.ed78ddc1.chunk.css",
+    "main.js": "/LiveChat/static/js/main.a5c0a4db.chunk.js",
+    "main.js.map": "/LiveChat/static/js/main.a5c0a4db.chunk.js.map",
     "runtime~main.js": "/LiveChat/static/js/runtime~main.5f4aefe9.js",
     "runtime~main.js.map": "/LiveChat/static/js/runtime~main.5f4aefe9.js.map",
     "static/js/2.69601102.chunk.js": "/LiveChat/static/js/2.69601102.chunk.js",
     "static/js/2.69601102.chunk.js.map": "/LiveChat/static/js/2.69601102.chunk.js.map",
     "index.html": "/LiveChat/index.html",
-    "precache-manifest.0a5f7da783910ae07303bda6f9b35bed.js": "/LiveChat/precache-manifest.0a5f7da783910ae07303bda6f9b35bed.js",
+    "precache-manifest.23a564e3181b0d2d0422103c63ef8d96.js": "/LiveChat/precache-manifest.23a564e3181b0d2d0422103c63ef8d96.js",
     "service-worker.js": "/LiveChat/service-worker.js",
-    "static/css/main.a86cfec6.chunk.css.map": "/LiveChat/static/css/main.a86cfec6.chunk.css.map",
+    "static/css/main.ed78ddc1.chunk.css.map": "/LiveChat/static/css/main.ed78ddc1.chunk.css.map",
     "static/media/avatar.png": "/LiveChat/static/media/avatar.170faf7e.png"
   }
 }
