@@ -11,10 +11,10 @@
  * See https://goo.gl/2aRDsh
  */
 
-importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.0/workbox-sw.js");
+importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/LiveChat/precache-manifest.23a564e3181b0d2d0422103c63ef8d96.js"
+  "/LiveChat/precache-manifest.ffe5a6acbf11266e982a9d7814067e02.js"
 );
 
 self.addEventListener('message', (event) => {
